@@ -1,25 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { BigInput } from "./ui/big-input";
-import { Input } from "./ui/input";
 import {
   Popover,
   PopoverAnchor,
   PopoverContent,
-  PopoverTrigger,
 } from "@/components/ui/popover";
 import useSearchBar from "@/hooks/use-search-bar";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import {
-  BadgeCheck,
-  BookOpenText,
-  GraduationCap,
-  Star,
-  UserCheck,
-} from "lucide-react";
+import { BadgeCheck, Star } from "lucide-react";
 
 export interface SearchBarProps extends React.HTMLProps<HTMLDivElement> {
   $size: "normal" | "large";
@@ -50,7 +40,6 @@ function SearchItem() {
               <Star className="size-4.5 text-yellow-500" />
             </span>
             <BadgeCheck className="size-4.5 text-accent" />
-            <UserCheck className="size-4.5 text-green-500" />
           </span>
         </Link>
       </Button>
