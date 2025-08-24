@@ -3,7 +3,7 @@
 import Link from "next/link";
 import ClubLogo from "./club-logo";
 import { Input } from "./ui/input";
-import { CalendarRange, GraduationCap } from "lucide-react";
+import { CalendarRange, Cloud, GraduationCap } from "lucide-react";
 import SearchBar from "./search-bar";
 import { usePathname } from "next/navigation";
 
@@ -43,6 +43,7 @@ export default function Navbar() {
             title="Malla"
             icon={<CalendarRange className="size-4.5" />}
           />
+          <Service title="Nube" icon={<Cloud className="size-4.5" />} />
         </ul>
       </div>
       <div className="grid-navbar p-6 container mx-auto items-center">
